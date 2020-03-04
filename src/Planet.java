@@ -8,7 +8,7 @@ public class Planet {
 	
 	/*
 	 *  Create a constructor that uses the given parameters. 
-	 *  A planet has a 5% chance of having alien life. 
+	 *  A planet has a 50% chance of having alien life. 
 	 *  In case of alien life, population is random.
 	 *  Hint! Make use of Math.random().
 	 *  https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#random--
@@ -113,7 +113,7 @@ public class Planet {
 	}
 	
 	// Create a method where two planets collide and the surviving one
-	// (aka the bigger one) is returned. Set the destroyed planet to null
+	// (aka the bigger one) is returned.
 	public static Planet collision(Planet p1, Planet p2) {
 		// Your code here
 		return null;
