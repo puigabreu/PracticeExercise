@@ -1,7 +1,7 @@
 public class Planet {
 	
 	private String name;
-	private double distance; // in light-years
+	private double distance; // in light-years from Earth
 	private double radius; // in kilometers
 	private int population;
 	
@@ -24,6 +24,7 @@ public class Planet {
 		// Your code here
 	}
 	
+	// Equals
 	public boolean equals(Object e) {
 		if(e instanceof Planet && ((Planet) e).name.equals(this.name))
 			return true;
@@ -44,6 +45,23 @@ public class Planet {
 	
 	public int getPopulation() {
 		return this.population;
+	}
+	
+	// Setters
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void getDistance(double distance) {
+		this.distance = distance;
+	}
+	
+	public void getRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	public void getPopulation(int population) {
+		this.population = population;
 	}
 	
 	/*
@@ -112,8 +130,9 @@ public class Planet {
 		return null;
 	}
 	
-	// Create a method where two planets collide and the surviving one
-	// (aka the bigger one) is returned.
+	/* Create a method where two planets collide and the surviving one
+	* (aka the bigger one) is returned. If they are the same, return null.
+	 */
 	public static Planet collision(Planet p1, Planet p2) {
 		// Your code here
 		return null;
@@ -123,5 +142,4 @@ public class Planet {
 	public static void main(String[] args) {
 		
 	}
-
 }
